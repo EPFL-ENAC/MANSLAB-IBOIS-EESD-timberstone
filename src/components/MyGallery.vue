@@ -20,13 +20,6 @@
           </v-img>
         </v-col>
       </v-row>
-      <div>
-        <video width="640" height="480" controls>
-          <source src="../../public/video/simulation.mp4" type="video/mp4" />
-
-          Your browser does not support the video tag.
-        </video>
-      </div>
     </div>
   </v-container>
 </template>

@@ -1,43 +1,37 @@
 <template>
-  <div>
-    <section id="1">
-      <my-gallery></my-gallery>
-    </section>
-
-    <section id="3">
-      <third-section></third-section>
-      <v-card class="center" width="600">
-        <model-stl src="stl/wall_t2.stl"></model-stl>
-      </v-card>
-
-      <br />
-      <br />
-    </section>
-    <v-card max-width="800">
-      <v-slider
-        v-model="ex1.val"
-        :color="ex1.color"
-        :label="ex1.label"
-        :step="10"
-      ></v-slider>
-
-      <v-slider hint="Im a hint" max="200" min="0" color="red"></v-slider>
-    </v-card>
-  </div>
+  <v-app>
+    <v-app-bar app dense>
+      <v-app-bar-title>
+        <div>Timberstone</div>
+      </v-app-bar-title>
+      <v-tabs color="#b45f06">
+        <v-tab to="/">Home</v-tab>
+        <v-tab to="/sec1">Part 1</v-tab>
+        <v-tab to="/sec2">Part 2</v-tab>
+        <v-tab to="/sec3">Part 3</v-tab>
+        <v-tab>Part 4</v-tab>
+        <v-tab to="/about">About</v-tab>
+      </v-tabs>
+    </v-app-bar>
+    <router-view class="app-bar"></router-view>
+    <!--<v-card class="center" width="600">
+      <model-stl src="stl/wall_t2.stl"></model-stl>
+    </v-card>-->
+  </v-app>
 </template>
 
 <script>
-import MyGallery from "./components/MyGallery";
-import ThirdSection from "./components/ThirdSection";
-import { ModelStl } from "vue-3d-model";
+// import MyGallery from "./components/MyGallery";
+// import ThirdSection from "./components/ThirdSection";
+// import { ModelStl } from "vue-3d-model";
 
 export default {
   name: "App",
 
   components: {
-    MyGallery,
-    ThirdSection,
-    ModelStl,
+    // MyGallery,
+    // ThirdSection,
+    // ModelStl,
   },
 
   data: () => ({
@@ -55,8 +49,12 @@ export default {
 <style>
 .center {
   margin: auto;
-  width: 60%;
-  border: 3px solid #73ad21;
-  padding: 10px;
+}
+
+.app-bar {
+  margin-top: 70px;
+}
+.v-app-bar-title div {
+  margin-right: 10px;
 }
 </style>
