@@ -37,3 +37,7 @@ To speed up the display, the images files was compressed (70%) and resized (70%)
 ### 3D file
 
 Some file was converted from ".off" format to ".stl" to be compliant with the 3D viewer module who don't read ".off" but ".stl"
+
+### Video
+
+Convert avi files to .mp4

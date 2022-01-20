@@ -4,6 +4,7 @@ import Home from './components/Home';
 import MyGallery from './components/MyGallery';
 import SecondSection from './components/SecondSection';
 import ThirdSection from './components/ThirdSection';
+import FourthSection from './components/FourthSection';
 import About from './components/About';
 
 
@@ -28,6 +29,10 @@ export default new VueRouter({
         {        
             path:'/sec3',
             component: ThirdSection
+        },
+        {        
+            path:'/sec4',
+            component: FourthSection
         },
         {        
             path:'/about',

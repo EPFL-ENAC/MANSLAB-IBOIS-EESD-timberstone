@@ -9,12 +9,12 @@
         <v-tab to="/sec1">Part 1</v-tab>
         <v-tab to="/sec2">Part 2</v-tab>
         <v-tab to="/sec3">Part 3</v-tab>
-        <v-tab>Part 4</v-tab>
+        <v-tab to="/sec4">Part 4</v-tab>
         <v-tab to="/about">About</v-tab>
       </v-tabs>
     </v-app-bar>
     <router-view class="app-bar"></router-view>
-    <!--<v-card class="center" width="600">
+    <!-- <v-card class="center" width="600">
       <model-stl src="stl/wall_t2.stl"></model-stl>
     </v-card>-->
   </v-app>
@@ -23,7 +23,7 @@
 <script>
 // import MyGallery from "./components/MyGallery";
 // import ThirdSection from "./components/ThirdSection";
-// import { ModelStl } from "vue-3d-model";
+//import { ModelStl } from "vue-3d-model";
 
 export default {
   name: "App",
