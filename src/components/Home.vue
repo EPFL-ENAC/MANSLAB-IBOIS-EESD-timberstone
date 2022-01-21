@@ -22,6 +22,8 @@
         precise structural design approach.
       </p>
     </div>
+
+    <!-- _____Project resume_____-->
     <v-row>
       <v-col>
         <v-card class="mx-auto" max-width="344"
@@ -35,12 +37,15 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Recusandae, fugiat facilis ducimus maiores cupiditate rem
           </v-card-text>
+          <v-card-actions>
+            <v-btn color="brown darken-1" text to="/sec1"> GO </v-btn>
+          </v-card-actions>
         </v-card></v-col
       >
       <v-col>
         <v-card class="mx-auto" max-width="344"
           ><v-img
-            src="img/home/gallery.jpg"
+            src="img/second_part/part2_1.png"
             width="220"
             height="220"
             class="center"
@@ -48,13 +53,16 @@
           <v-card-text>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Recusandae, fugiat facilis ducimus maiores cupiditate rem
-          </v-card-text></v-card
+          </v-card-text>
+          <v-card-actions>
+            <v-btn color="brown darken-1" text to="/sec2"> GO </v-btn>
+          </v-card-actions></v-card
         ></v-col
       >
       <v-col>
         <v-card class="mx-auto" max-width="344"
           ><v-img
-            src="img/home/rock.jpg"
+            src="img/home/stone.jpg"
             width="220"
             height="220"
             class="center"
@@ -62,13 +70,16 @@
           <v-card-text>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Recusandae, fugiat facilis ducimus maiores
-          </v-card-text></v-card
+          </v-card-text>
+          <v-card-actions>
+            <v-btn color="brown darken-1" text to="/sec3"> GO </v-btn>
+          </v-card-actions></v-card
         ></v-col
       >
       <v-col>
-        <v-card class="mx-auto" max-width="344"
+        <v-card class="mx-auto" max-width="344" flat
           ><v-img
-            src="img/home/gallery.jpg"
+            src="img/home/mesh.jpg"
             width="220"
             height="220"
             class="center"
@@ -76,11 +87,68 @@
           <v-card-text>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Recusandae, fugiat facilis ducimus maiores
-          </v-card-text></v-card
+          </v-card-text>
+          <v-card-actions>
+            <v-btn color="brown darken-1" text to="/sec4"> GO </v-btn>
+          </v-card-actions></v-card
         ></v-col
       >
       <info-tooltip> </info-tooltip>
     </v-row>
+    <!-- _____PIs Project_____-->
+    <div class="pi-title"><b>PIs</b></div>
+    <div class="pi">
+      <v-row>
+        <v-col>
+          <v-card class="mx-auto" max-width="344" flat>
+            <v-card-title
+              ><a href="https://people.epfl.ch/julien.gamerro"
+                >Julien Gamerro</a
+              >
+            </v-card-title>
+            <a href="https://www.epfl.ch/labs/ibois/fr/2349-2/">
+              <v-img
+                src="img/home/IBOIS.jpg"
+                width="175"
+                height="50"
+                class="center"
+              ></v-img
+            ></a> </v-card
+        ></v-col>
+        <v-col>
+          <v-card class="mx-auto" max-width="344" flat
+            ><v-card-title>
+              <a href="https://people.epfl.ch/nicole.nay"
+                >Nicole Nay</a
+              ></v-card-title
+            >
+            <a href="https://www.epfl.ch/labs/manslab/">
+              <v-img
+                src="img/home/MANSLAB.jpg"
+                width="85"
+                height="110"
+                class="center"
+              ></v-img
+            ></a> </v-card
+        ></v-col>
+        <v-col>
+          <v-card class="mx-auto" max-width="344" flat>
+            <v-card-title
+              ><a href="https://people.epfl.ch/mahmoud.shaqfa"
+                >Mahmoud Shaqfa</a
+              >
+            </v-card-title>
+            <a href="https://www.epfl.ch/labs/eesd/">
+              <v-img
+                src="img/home/EESD.png"
+                width="175"
+                height="50"
+                class="center"
+              ></v-img
+            ></a> </v-card
+        ></v-col>
+      </v-row>
+    </div>
   </v-container>
 </template>
 
@@ -109,5 +177,27 @@ export default {
   font-size: 18px;
   letter-spacing: 0.5px;
   line-height: 1.7em;
+}
+.pi {
+  text-align: center;
+  margin-top: 30px;
+}
+.pi-title {
+  /*padding-top: 150px;*/
+  padding-bottom: 30px;
+  color: black;
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.pi a:link {
+  color: black;
+  text-decoration: none;
+}
+.pi a:hover {
+  text-decoration: underline;
 }
 </style>
