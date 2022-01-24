@@ -38,7 +38,7 @@
 <script>
 import { ModelStl } from "vue-3d-model";
 export default {
-  name: "ThirdSection",
+  name: "ThirdSectionTest",
   components: {
     ModelStl,
   },

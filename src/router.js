@@ -7,6 +7,7 @@ import ThirdSection from './components/ThirdSection';
 import FourthSection from './components/FourthSection';
 import About from './components/About';
 import HomeTest from './components/HomeTest';
+import ThirdSectionTest from './components/ThirdSectionTest';
 
 
 Vue.use(VueRouter);
@@ -42,6 +43,10 @@ export default new VueRouter({
         {        
             path:'/Home2',
             component: HomeTest
+        },
+        {        
+            path:'/third-test',
+            component: ThirdSectionTest
         },
         {       
          path:'**',

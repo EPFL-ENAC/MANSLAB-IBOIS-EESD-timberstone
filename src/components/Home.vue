@@ -77,7 +77,7 @@
         ></v-col
       >
       <v-col>
-        <v-card class="mx-auto" max-width="344" flat
+        <v-card class="mx-auto" max-width="344"
           ><v-img
             src="img/home/mesh.jpg"
             width="220"
@@ -141,6 +141,23 @@
             <a href="https://www.epfl.ch/labs/eesd/">
               <v-img
                 src="img/home/EESD.png"
+                width="175"
+                height="50"
+                class="center"
+              ></v-img
+            ></a> </v-card
+        ></v-col>
+      </v-row>
+      <div class="pi-title"><b>Developped by</b></div>
+      <v-row>
+        <v-col>
+          <v-card class="mx-auto" max-width="344" flat>
+            <v-card-title
+              ><a href="https://it4r.super.site/">IT4Research</a>
+            </v-card-title>
+            <a href="https://it4r.super.site/">
+              <v-img
+                src="img/home/EPFL.png"
                 width="175"
                 height="50"
                 class="center"
