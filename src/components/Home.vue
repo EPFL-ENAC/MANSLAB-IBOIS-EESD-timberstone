@@ -62,7 +62,7 @@
       <v-col>
         <v-card class="mx-auto" max-width="344"
           ><v-img
-            src="img/home/stone.jpg"
+            src="img/home/stone.JPG"
             width="220"
             height="220"
             class="center"
@@ -79,7 +79,7 @@
       <v-col>
         <v-card class="mx-auto" max-width="344"
           ><v-img
-            src="img/home/mesh.jpg"
+            src="img/home/mesh.JPG"
             width="220"
             height="220"
             class="center"

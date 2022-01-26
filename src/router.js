@@ -20,8 +20,8 @@ export default new VueRouter({
             component: Home
         },
         {        
-        path:'/sec1',
-        component: MyGallery
+            path:'/sec1',
+            component: MyGallery
         },
 
         {        
@@ -50,7 +50,7 @@ export default new VueRouter({
         },
         {       
          path:'**',
-    component: Home
+    component: Home 
     }
 
     ]

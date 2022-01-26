@@ -5,7 +5,7 @@
       <v-row>
         <v-col v-for="n in 24" :key="n" class="d-flex child-flex" cols="2">
           <v-img
-            :src="`img/${n}_sec1.JPG`"
+            :src="`img/${n}_sec1.jpg`"
             aspect-ratio="1"
             class="grey lighten-2"
           >
