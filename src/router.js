@@ -6,8 +6,9 @@ import SecondSection from './components/SecondSection';
 import ThirdSection from './components/ThirdSection';
 import FourthSection from './components/FourthSection';
 import About from './components/About';
-import HomeTest from './components/HomeTest';
-import ThirdSectionTest from './components/ThirdSectionTest';
+import Home2 from './components/Home2';
+import Home3 from './components/Home3';
+import Wireframe from "./components/Wireframe";
 
 
 Vue.use(VueRouter);
@@ -42,12 +43,18 @@ export default new VueRouter({
         },
         {        
             path:'/Home2',
-            component: HomeTest
+            component: Home2
         },
         {        
-            path:'/third-test',
-            component: ThirdSectionTest
+            path:'/Home3',
+            component: Home3
         },
+
+
+        {
+            path: "/wireframe",
+            component: Wireframe,
+          },
         {       
          path:'**',
     component: Home 

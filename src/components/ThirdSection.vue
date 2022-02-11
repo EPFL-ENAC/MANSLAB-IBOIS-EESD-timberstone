@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Section 3</h1>
     <div class="vp-content">
       <p>
         Nobis impedit placeat doloribus dolore repellat eveniet ducimus
@@ -12,12 +11,23 @@
       <v-card class="center card-image" max-width="1500">
         <v-row>
           <v-col>
-            <model-stl src="./stl/stone_mesh_course.stl"></model-stl>
+            <model-stl
+              src="./stl/stone_mesh_course.stl"
+              :lights="lights"
+            ></model-stl>
+            <div padding-top="800px"></div>
           </v-col>
           <v-col>
             <model-stl src="./stl/stone_mesh_refined.stl"></model-stl>
           </v-col>
         </v-row>
+
+        <v-row>
+          <v-col>
+            <v-card><wireframe></wireframe></v-card>
+          </v-col>
+          <v-col></v-col
+        ></v-row>
       </v-card>
       <div class="vp-content">
         <p>
@@ -91,10 +101,12 @@
 
 <script>
 import { ModelStl } from "vue-3d-model";
+import Wireframe from "./Wireframe";
 export default {
   name: "ThirdSection",
   components: {
     ModelStl,
+    Wireframe,
   },
 
   data: () => ({
@@ -132,6 +144,48 @@ export default {
       "img/third_part/wall4.jpg",
       "img/third_part/wall5.jpg",
       "img/third_part/wall6.jpg",
+    ],
+
+    lights: [
+      //Front
+      {
+        type: "PointLight",
+        position: { x: 10, y: 0, z: 10 },
+        color: 0xffffff,
+        intensity: 1,
+      },
+      {
+        type: "PointLight",
+        position: { x: 0, y: 40, z: -15 },
+        color: 0xffffff,
+        intensity: 0.3,
+      },
+
+      //back
+      {
+        type: "PointLight",
+        position: { x: -10, y: 0, z: -10 },
+        color: 0xffffff,
+        intensity: 1,
+      },
+      // {
+      //   type: "PointLight",
+      //   position: { x: -15, y: 40, z: 25 },
+      //   color: 0xffffff,
+      //   intensity: 0.6,
+      // },
+      // {
+      //   type: "PointLight",
+      //   position: { x: 0.5, y: 1, z: 0.5 },
+      //   color: 0xffffff,
+      //   intensity: 0.2,
+      // },
+      // {
+      //   type: "PointLight",
+      //   position: { x: 1, y: 0.5, z: 0.5 },
+      //   color: 0xffffff,
+      //   intensity: 0.2,
+      // },
     ],
   }),
 

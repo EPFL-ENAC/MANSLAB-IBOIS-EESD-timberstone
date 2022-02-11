@@ -38,7 +38,7 @@
             Recusandae, fugiat facilis ducimus maiores cupiditate rem
           </v-card-text>
           <v-card-actions>
-            <v-btn color="black" text to="/sec1"> GO </v-btn>
+            <v-btn color="brown lighten-1" text to="/sec1"> GO </v-btn>
           </v-card-actions>
         </v-card></v-col
       >
@@ -55,7 +55,7 @@
             Recusandae, fugiat facilis ducimus maiores cupiditate rem
           </v-card-text>
           <v-card-actions>
-            <v-btn color="black" text to="/sec2"> GO </v-btn>
+            <v-btn color="brown lighten-1" text to="/sec2"> GO </v-btn>
           </v-card-actions></v-card
         ></v-col
       >
@@ -72,7 +72,7 @@
             Recusandae, fugiat facilis ducimus maiores
           </v-card-text>
           <v-card-actions>
-            <v-btn color="black" text to="/sec3"> GO </v-btn>
+            <v-btn color="brown lighten-1" text to="/sec3"> GO </v-btn>
           </v-card-actions></v-card
         ></v-col
       >
@@ -89,14 +89,14 @@
             Recusandae, fugiat facilis ducimus maiores
           </v-card-text>
           <v-card-actions>
-            <v-btn color="black" text to="/sec4"> GO </v-btn>
+            <v-btn color="brown lighten-1" text to="/sec4"> GO </v-btn>
           </v-card-actions></v-card
         ></v-col
       >
       <info-tooltip> </info-tooltip>
     </v-row>
     <!-- _____PIs Project_____-->
-    <div class="pi-title"><b>PIs: Contributors</b></div>
+    <div class="pi-title"><b>PIs</b></div>
     <div class="pi">
       <v-row>
         <v-col>
@@ -104,8 +104,8 @@
             <v-avatar size="90"
               ><img src="img/home/Gamerro.jpg" alt="Avatar"
             /></v-avatar>
-            <v-card-title>
-              <a href="https://people.epfl.ch/julien.gamerro">Julien Gamerro</a>
+            <v-card-title href="https://people.epfl.ch/julien.gamerro">
+              Julien Gamerro
             </v-card-title>
             <a href="https://www.epfl.ch/labs/ibois/fr/2349-2/">
               <v-img
@@ -176,6 +176,9 @@
               ></v-img
             ></a> </v-card
         ></v-col>
+      </v-row>
+      <div class="pi-title"><b>Developped by</b></div>
+      <v-row>
         <v-col>
           <v-card class="mx-auto" max-width="344" flat>
             <v-card-title
@@ -198,24 +201,26 @@
 <script>
 import InfoTooltip from "./commons/InfoTooltip.vue";
 export default {
-  name: "Home",
+  name: "Home3",
 
   data: () => ({
     InfoTooltip,
   }),
 
   created() {
-    this.$vuetify.theme.dark = false;
+    this.$vuetify.theme.dark = true;
+    console.log("hello");
+    console.log(this.$vuetify.theme);
   },
 };
 </script>
 
-<style>
+<style scoped>
 .vp-content {
   max-width: 900px;
   /*padding-top: 150px;*/
   padding-bottom: 60px;
-  color: black;
+
   display: block;
   margin: auto;
 }
@@ -224,6 +229,7 @@ export default {
   font-size: 18px;
   letter-spacing: 0.5px;
   line-height: 1.7em;
+  color: white;
 }
 .pi {
   text-align: center;
@@ -232,20 +238,19 @@ export default {
 .pi-title {
   /*padding-top: 150px;*/
   padding-bottom: 30px;
-  color: black;
+  color: white;
+
   display: block;
   margin: auto;
   margin-top: 80px;
   font-size: 30px;
   text-align: center;
 }
-.pi a {
-  color: black;
+
+.pi a:link {
+  color: white;
 }
-.v-application a {
-  color: black !important;
-}
-/*.pi a:hover {
+.pi a:hover {
   text-decoration: underline;
-}*/
+}
 </style>
