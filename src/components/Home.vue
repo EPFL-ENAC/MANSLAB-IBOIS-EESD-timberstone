@@ -213,7 +213,7 @@ export default {
 <style>
 .vp-content {
   max-width: 900px;
-  /*padding-top: 150px;*/
+  /*padding-top: 150px; */
   padding-bottom: 60px;
   color: black;
   display: block;
