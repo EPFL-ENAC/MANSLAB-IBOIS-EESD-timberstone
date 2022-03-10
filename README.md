@@ -1,43 +1,8 @@
 # MANSLAB-timberstone
 
-## Project setup
+## Cables integration
 
-```
-npm install
-```
+Cables' patch URL: [https://cables.gl/p/IPOl2Y](https://cables.gl/p/IPOl2Y).
+To include it here, Export the Patch as a ZIP file and select Export ALL assets (not automatic). Leave the rest by default.
 
-### Compiles and hot-reloads for development
-
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-## Files setup
-
-### images
-
-To speed up the display, the images files was compressed (70%) and resized (70%) from the source file with the software.
-
-### 3D file
-
-Some file was converted from ".off" format to ".stl" to be compliant with the 3D viewer module who don't read ".off" but ".stl"
-
-### Video
-
-Convert avi files to .mp4
+Then copy the `/assets/` files to the current `/assets/` folder.
