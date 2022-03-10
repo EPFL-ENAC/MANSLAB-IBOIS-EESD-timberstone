@@ -23,7 +23,7 @@ canvas {
 	position: relative;
 }
 
-/* #cables-container-4 {
+#cables-container-4 {
 	width: 640px;
 	height: 480px;
 }
@@ -31,4 +31,4 @@ canvas {
 #cables-container-5 {
 	width: 700px;
 	height: 700px;
-} */
+}

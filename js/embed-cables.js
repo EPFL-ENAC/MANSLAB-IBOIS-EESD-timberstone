@@ -67,6 +67,9 @@ function moveCanvasToPlaceholder(sectionId) {
 
     glcanvas.display = 'block';
     glcanvas.position = 'relative';
+
+    glcanvas.style.width = `${$(dest).width()}px`;
+    glcanvas.style.height = `${$(dest).height()}px`;
 }
 
 // INTERNAL
@@ -112,8 +115,6 @@ document.addEventListener('CABLES.jsLoaded', function (event) {
         "onFinishedLoading": patchFinishedLoading,
         // "canvas":{"alpha":true,"premultipliedAlpha":true} // make canvas transparent
     });
-    let glcanvas = document.getElementById("glcanvas");
-    glcanvas.display = 'block';
 });
 
 })(); // Automatically called
