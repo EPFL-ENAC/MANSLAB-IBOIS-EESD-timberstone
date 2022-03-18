@@ -5,12 +5,37 @@ window.CABLES = window.CABLES || {};
 
 SECTION_VAR = 'partId';
 OBJ_VAR = 'objId';
+SHOW_SIDEBAR = "showSidebar"
 
 function getCurrentCablesSection() {
     const curSec = CABLES.patch.getVar(SECTION_VAR);
     if (curSec)
         return curSec.getValue();
     return null;
+}
+
+function showCablesSidebar(show) {
+    const sidebar = CABLES.patch.getVar(SHOW_SIDEBAR);
+    if (sidebar)
+        return sidebar.setValue(show);
+    return null;
+}
+
+
+function getCablesSidebar() {
+    let sidebar = document.getElementsByClassName('sidebar-cables');
+    if (!sidebar) {
+        return null;
+    }
+    // Only 1 sidebar
+    return sidebar[0];
+}
+
+function hideCablesSidebar() {
+    let sidebar = getCablesSidebar();
+    if (sidebar) {
+        sidebar.style.display = 'none';
+    }
 }
 
 function changeSection(sectionId) {
@@ -55,21 +80,24 @@ function checkChangeSection() {
 
 function moveCanvasToPlaceholder(sectionId) {
     let glcanvas = document.getElementById("glcanvas");
+    let sidebar = getCablesSidebar();
 
     const dest = document.getElementById(`cables-container-${sectionId}`);
     if (!dest) { // can't find placeholder, hide
         glcanvas.display = 'none';
+        showCablesSidebar(false);
         return;
     }
-
-    // Move canvas
-    dest.append(glcanvas);
 
     glcanvas.display = 'block';
     glcanvas.position = 'relative';
 
     glcanvas.style.width = `${$(dest).width()}px`;
     glcanvas.style.height = `${$(dest).height()}px`;
+
+    // Move canvas
+    dest.append(glcanvas, sidebar);
+    showCablesSidebar(true);
 }
 
 // INTERNAL
@@ -99,8 +127,12 @@ document.getElementById('glcanvas').addEventListener('touchmove',
     (e) => { e.preventDefault(); }, false
 );
 
+// function patchInitialized(patch) {
+//     // The patch is ready now, all assets have been loaded
+//     hideCablesSidebar();
+// }
+
 function patchFinishedLoading(patch) {
-    // The patch is ready now, all assets have been loaded
     createAPI();
     registerCallbacks();
 }
@@ -110,8 +142,7 @@ document.addEventListener('CABLES.jsLoaded', function (event) {
         patch: CABLES.exportedPatch,
         "prefixAssetPath": "",
         "glCanvasId": "glcanvas",
-        "glCanvasResizeToWindow": true,
-        // "onPatchLoaded": patchInitialized,
+        "glCanvasResizeToWindow": false,
         "onFinishedLoading": patchFinishedLoading,
         // "canvas":{"alpha":true,"premultipliedAlpha":true} // make canvas transparent
     });

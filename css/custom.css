@@ -21,14 +21,16 @@ canvas {
 #glcanvas {
 	display: block;
 	position: relative;
+	height: 700px;
 }
 
 #cables-container-4 {
-	width: 640px;
-	height: 480px;
+	display: block;
+	position: relative;
+	height: 700px;
 }
 
 #cables-container-5 {
-	width: 700px;
 	height: 700px;
+	position: relative;
 }
