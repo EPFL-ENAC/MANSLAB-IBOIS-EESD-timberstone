@@ -80,12 +80,14 @@ function checkChangeSection() {
 
 function moveCanvasToPlaceholder(sectionId) {
     let glcanvas = document.getElementById("glcanvas");
+    let img3d = document.getElementById(`img-3d-p${sectionId}`);
     let sidebar = getCablesSidebar();
 
     const dest = document.getElementById(`cables-container-${sectionId}`);
     if (!dest) { // can't find placeholder, hide
         glcanvas.display = 'none';
         showCablesSidebar(false);
+        img3d.style.display = "block";
         return;
     }
 
@@ -96,6 +98,7 @@ function moveCanvasToPlaceholder(sectionId) {
     glcanvas.style.height = `${$(dest).height()}px`;
 
     // Move canvas
+    img3d.style.display = "none"
     dest.append(glcanvas, sidebar);
     showCablesSidebar(true);
 }
