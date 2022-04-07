@@ -1,413 +1,708 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-	<head>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
 
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="author" content="SemiColonWeb" />
-
-		<!-- Stylesheets
+    <!-- Stylesheets
 		============================================= -->
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-		<link rel="stylesheet" href="style.css" type="text/css" />
-		<link rel="stylesheet" href="css/swiper.css" type="text/css" />
-		<link rel="stylesheet" href="css/dark.css" type="text/css" />
-		<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
-		<link rel="stylesheet" href="css/animate.css" type="text/css" />
-		<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 
-		<link rel="stylesheet" href="css/custom.css" type="text/css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- Document Title
+    <!-- Document Title
 		============================================= -->
-		<title>EPFL - Timberstone</title>
+    <title>EPFL - Timberstone</title>
+  </head>
 
-	</head>
+  <body class="stretched">
+    <!-- Document Wrapper
+	  ============================================= -->
+    <div id="wrapper" class="clearfix">
+      <div
+        id="home"
+        class="page-section"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 200px;
+          z-index: -2;
+        "
+      ></div>
 
-	<body class="stretched">
+      <section
+        id="slider"
+        class="slider-element slider-parallax min-vh-60 min-vh-md-100 with-header swiper_wrapper"
+      >
+        <div class="slider-inner">
+          <div class="swiper-container swiper-parent">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide dark">
+                <div class="container">
+                  <div class="slider-caption slider-caption-center">
+                    <h2 data-animate="fadeInUp">
+                      Hybrid Timber-stone stuctures
+                    </h2>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide-bg"
+                  style="background-image: url('images/labo/EPFL_campus2.jpg')"
+                ></div>
+              </div>
+              <div class="swiper-slide dark">
+                <div class="container">
+                  <div class="slider-caption slider-caption-center">
+                    <h2 data-animate="fadeInUp">
+                      Hybrid Timber-stone stuctures
+                    </h2>
+                    <p
+                      class="d-none d-sm-block"
+                      data-animate="fadeInUp"
+                      data-delay="200"
+                    >
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Similique unde neque voluptas ad illo facilis.
+                    </p>
+                  </div>
+                </div>
+                <div class="video-wrap">
+                  <video
+                    poster="images/part2/1_sec1.jpg"
+                    preload="auto"
+                    loop
+                    autoplay
+                    muted
+                  >
+                    <source src="images/part4/24_sec1.mp4" type="video/mp4" />
+                    <source
+                      src="images/videos/explore.webm"
+                      type="video/webm"
+                    />
+                  </video>
+                  <div
+                    class="video-overlay"
+                    style="background-color: rgba(0, 0, 0, 0.55)"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
+            <div class="slider-arrow-right">
+              <i class="icon-angle-right"></i>
+            </div>
+            <div class="slide-number">
+              <div class="slide-number-current"></div>
+              <span>/</span>
+              <div class="slide-number-total"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<!-- Document Wrapper
-		============================================= -->
-		<div id="wrapper" class="clearfix">
-
-			<div id="home" class="page-section" style="position:absolute;top:0;left:0;width:100%;height:200px;z-index:-2;"></div>
-
-			<section id="slider" class="slider-element slider-parallax min-vh-60 min-vh-md-100 with-header swiper_wrapper">
-				<div class="slider-inner">
-
-					<div class="swiper-container swiper-parent">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide dark">
-								<div class="container">
-									<div class="slider-caption slider-caption-center">
-										<h2 data-animate="fadeInUp">Hybrid Timber-stone stuctures</h2>
-										<!-- <p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique unde neque voluptas ad illo facilis.</p> -->
-									</div>
-								</div>
-								<!--<div class="swiper-slide-bg" style="background-image: url('images/slider/swiper/1.jpg');"></div>-->
-								<div class="swiper-slide-bg" style="background-image: url('images/labo/EPFL_campus2.jpg');"></div>
-							</div>
-							<div class="swiper-slide dark">
-								<div class="container">
-									<div class="slider-caption slider-caption-center">
-										<h2 data-animate="fadeInUp">Hybrid Timber-stone stuctures</h2>
-										<p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique unde neque voluptas ad illo facilis.</p>
-									</div>
-								</div>
-								<div class="video-wrap">
-									<video poster="images/part2/1_sec1.jpg" preload="auto" loop autoplay muted>
-										<!--<video poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay muted>-->
-										<source src='images/part4/24_sec1.mp4' type='video/mp4' />
-										<source src='images/videos/explore.webm' type='video/webm' />
-									</video>
-									<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
-								</div>
-							</div>
-
-						</div>
-						<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
-						<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
-						<div class="slide-number"><div class="slide-number-current"></div><span>/</span><div class="slide-number-total"></div></div>
-					</div>
-
-				</div>
-			</section>
-
-			<!-- Header
-			============================================= -->
-			<header id="header" class="full-header">
-				<div id="header-wrap">
-					<div class="container">
-						<div class="header-row">
-
-							<!-- Logo
+      <!-- Header =================================== -->
+      <header id="header" class="full-header">
+        <div id="header-wrap">
+          <div class="container">
+            <div class="header-row">
+              <!-- Logo
 							============================================= -->
-							<div id="logo">
-								<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="EPFL logo"></a>
-								<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="EPFL"></a>
-							</div><!-- #logo end -->
+              <div id="logo">
+                <a
+                  href="index.html"
+                  class="standard-logo"
+                  data-dark-logo="images/logo-dark.png"
+                  ><img src="images/logo.png" alt="EPFL logo"
+                /></a>
+                <a
+                  href="index.html"
+                  class="retina-logo"
+                  data-dark-logo="images/logo-dark@2x.png"
+                  ><img src="images/logo@2x.png" alt="EPFL"
+                /></a>
+              </div>
+              <!-- #logo end -->
 
-							<div class="header-misc">
-
-								<!-- Top Search
+              <div class="header-misc">
+                <!-- Top Search
 								============================================= -->
-								<div id="top-search" class="header-misc-icon">
-									<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
-								</div><!-- #top-search end -->
+                <div id="top-search" class="header-misc-icon">
+                  <a href="#" id="top-search-trigger"
+                    ><i class="icon-line-search"></i
+                    ><i class="icon-line-cross"></i
+                  ></a>
+                </div>
+                <!-- #top-search end -->
+              </div>
 
-							</div>
+              <div id="primary-menu-trigger">
+                <svg class="svg-trigger" viewBox="0 0 100 100">
+                  <path
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                  ></path>
+                  <path d="m 30,50 h 40"></path>
+                  <path
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                  ></path>
+                </svg>
+              </div>
 
-							<div id="primary-menu-trigger">
-								<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
-							</div>
-
-							<!-- Primary Navigation
+              <!-- Primary Navigation
 							============================================= -->
-							<nav class="primary-menu">
-								<ul class="menu-container one-page-menu" data-easing="easeInOutExpo" data-speed="1500">
-									<li class="menu-item"><a class="menu-link" href="#" data-href="#home"><div>Home</div></a></li>
-									<li class="menu-item"><a class="menu-link" href="#" data-href="#section-one"><div>Historical context</div></a></li>
-									<li class="menu-item"><a class="menu-link" href="#" data-href="#section-two"><div>Students Mockups</div></a></li>
-									<li class="menu-item"><a class="menu-link" href="#" data-href="#section-three"><div>Building of the wall</div></a></li>
-									<li class="menu-item"><a class="menu-link" href="#" data-href="#section4"><div>Scanning “Digital Twin”</div></a></li>
-									<li class="menu-item"><a class="menu-link" href="#" data-href="#section5"><div>Stacking algo</div></a></li>
-									<li class="menu-item"><a class="menu-link" href="#" data-href="#section-six"><div>AR Assembly</div></a></li>			
-								</ul>
-							</nav><!-- #primary-menu end -->
-							<form class="top-search-form" action="search.html" method="get">
-								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="header-wrap-clone"></div>
-			</header><!-- #header end -->
+              <nav class="primary-menu">
+                <ul
+                  class="menu-container one-page-menu"
+                  data-easing="easeInOutExpo"
+                  data-speed="1500"
+                >
+                  <li class="menu-item">
+                    <a class="menu-link" href="#" data-href="#home"
+                      ><div>Home</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#" data-href="#section-one"
+                      ><div>Historical context</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#" data-href="#section-two"
+                      ><div>Students Mockups</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#" data-href="#section-three"
+                      ><div>Building of the wall</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#" data-href="#section4"
+                      ><div>Scanning “Digital Twin”</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#" data-href="#section5"
+                      ><div>Stacking algo</div></a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a class="menu-link" href="#" data-href="#section-six"
+                      ><div>AR Assembly</div></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <!-- #primary-menu end -->
+              <form class="top-search-form" action="search.html" method="get">
+                <input
+                  type="text"
+                  name="q"
+                  class="form-control"
+                  value=""
+                  placeholder="Type &amp; Hit Enter.."
+                  autocomplete="off"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="header-wrap-clone"></div>
+      </header>
+      <!-- #header end -->
 
-			<!-- Content
+      <!-- Content
 			============================================= -->
-			<section id="content">
-				<div class="content-wrap">
-					<section id="section-about" class="page-section">
-						<div class="container">
-							<div class="row align-items-center">
-								<div class="col-lg-6">
-									<div class="heading-block">
-										<h1>Visual Abstract - Key results.</h1>
-									</div>
-									<p class="lead">      
-										<ul>
-											<li>How can we improve the application of such kind of construction technique?</li>
-											<li>How is the design of a hybrid timber-stone construction? </li>
-											<li>Could we automate the stacking of the stones?</li>
-											<li>How to make this type of construction more accessible to builders?</li>
-											<li>Is it possible to use scrub stone?</li>
-											<li>Could we use non transformed wood?</li>										
-										</ul>
-									</p>
-								</div>
-								<div class="col-lg-6 align-self-end">
-								</div>
-							</div>
-						</div>
-						<div class="section dark parallax mb-0" style="padding: 80px 0;background-image: url('images/part1/Stonewall.jpg');" data-bottom-top="background-position:0px 100px;" data-top-bottom="background-position:0px -300px;">
-							<div class="container clearfix"></div>
-						</div>
-					</section>
-	<!--
-						<div class="section dark parallax mb-0" style="padding: 80px 0;background-image: url('images/part1/Stonewall.jpg');" data-bottom-top="background-position:0px 100px;" data-top-bottom="background-position:0px -300px;">
-							<div class="container clearfix">
+      <section id="content">
+        <div class="content-wrap">
+          <section id="section-about" class="page-section">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <div class="heading-block">
+                    <h1>Visual Abstract - Key results.</h1>
+                  </div>
+                  <div class="lead">
+                    <ul>
+                      <li>
+                        How can we improve the application of such kind of
+                        construction technique?
+                      </li>
+                      <li>
+                        How is the design of a hybrid timber-stone construction?
+                      </li>
+                      <li>Could we automate the stacking of the stones?</li>
+                      <li>
+                        How to make this type of construction more accessible to
+                        builders?
+                      </li>
+                      <li>Is it possible to use scrub stone?</li>
+                      <li>Could we use non transformed wood?</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-6 align-self-end"></div>
+              </div>
+            </div>
+            <div
+              class="section dark parallax mb-0"
+              style="
+                padding: 80px 0;
+                background-image: url('images/part1/Stonewall.jpg');
+              "
+              data-bottom-top="background-position:0px 100px;"
+              data-top-bottom="background-position:0px -300px;"
+            >
+              <div class="container clearfix"></div>
+            </div>
+          </section>
 
-								<div class="row col-mb-50">
-									<div class="col-sm-6 col-lg-3 text-center" data-animate="bounceIn">
+          <!--Section 1-->
+          <section id="section-one" class="page-section">
+            <div class="container">
+              <div class="row align-items-center col-mb-50">
+                <div class="col-md-5 order-md-last">
+                  <img
+                    src="images/part1/Tour2.JPG.jpg"
+                    data-animate="fadeInUp"
+                    data-delay="100"
+                    alt="Chrome"
+                  />
+                </div>
+                <div class="col-md-7 text-center text-md-start">
+                  <div class="heading-block border-bottom-0">
+                    <h4>Historical context & research Question</h4>
+                  </div>
+                  <p>
+                    There are several types of hybrid timber-stone construction
+                    around the world. The most impressive is the Kath kuni
+                    construction type of the northern parts of India. This
+                    regions is known for his earthquake frequencies.
+                    Nevertheless you can find 30 ff/meter high towers which are
+                    very old and survives several earthquakes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
-										<h2>EESD</h2>
-									</div>
-									<div class="col-sm-6 col-lg-3 text-center" data-animate="bounceIn">
+          <!--Section2-->
+          <section id="section-two" class="page-section">
+            <div class="section my-0">
+              <div class="container">
+                <div class="row align-items-center col-mb-50">
+                  <div class="col-md-12 text-center text-md-start">
+                    <div class="heading-block border-bottom-0">
+                      <h4>Students Mockups</h4>
+                    </div>
+                    <p>
+                      To explore different possibilities of designing a hybrid
+                      timber-stone construction we did an exercise with the
+                      student of the MANSLAB (Bachelor). The outcome are mockups
+                      in the scale 1/10. They explored the nature of the wood
+                      and the possibilities of prefabricated modules in the hope
+                      to improve the building process.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="masonry-thumbs grid-container grid-4"
+                  data-lightbox="gallery"
+                >
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/0_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/0_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/1_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/1_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/2_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/2_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/3_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/3_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/4_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/4_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/5_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/5_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/6_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/6_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/7_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/7_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/8_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/8_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/9_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/9_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/10_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/10_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/11_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/11_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/12_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/12_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/13_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/13_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/14_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/14_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/15_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/15_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/16_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/16_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/17_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/17_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/18_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/18_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/19_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/19_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/20_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/20_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/21_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/21_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/22_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/22_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                  <a
+                    class="grid-item"
+                    href="images/part2/full/23_sec1.jpg"
+                    data-lightbox="gallery-item"
+                    ><img src="images/part2/23_sec1.jpg" alt="Gallery Thumb 1"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </section>
 
-										<h2>MANSLAB</h2>
-									</div>
+          <!--Section3-->
+          <section
+            id="section-three"
+            class="page-section"
+            style="margin-top: 50px; margin-bottom: 50px"
+          >
+            <div class="container">
+              <div class="row align-items-center col-mb-50">
+                <div class="col-md-5 order-md-last">
+                  <img
+                    src="images/part3/Capture.JPG"
+                    data-animate="fadeInUp"
+                    data-delay="100"
+                    alt="Building of the wall"
+                  />
+                </div>
+                <div class="col-md-7 text-center text-md-start">
+                  <div class="heading-block border-bottom-0">
+                    <h4>Building of the wall</h4>
+                  </div>
+                  <p>
+                    To learn about the dry stone stacking technique we filmed
+                    the craftsmen building a wall of 1,5m length, 0,7m width and
+                    1,5m height. The stone has been selected by the experimented
+                    builder in a stone quarry near the EPFL. A second wall has
+                    been built by the same craftsmen and the same wood, but with
+                    scrub stone of an other quarry.
+                  </p>
+                  <p>The result of the second wall is not very convincing.</p>
+                </div>
+              </div>
+            </div>
+          </section>
 
-									<div class="col-sm-6 col-lg-3 text-center" data-animate="bounceIn">
+          <!--Section 4-->
+          <section id="section4" class="page-section">
+            <div class="section my-0">
+              <div class="container">
+                <div class="row align-items-center col-mb-20">
+                  <div class="col-md-7 text-center text-md-start">
+                    <div class="heading-block border-bottom-0">
+                      <h4>Scanning “Digital Twin”</h4>
+                    </div>
+                  </div>
+                  <div class="col-md-12 text-center text-md-start">
+                    <p>
+                      Paragraph explaining the data acquisition process with
+                      LiDAR scan and the reconstruction method. Description of
+                      the small video above that will need to be done (not yet
+                      done due to the scanning hardware problem).
+                    </p>
+                    <p>
+                      Paragraph explaining the final model from point cloud.
+                      User could navigate in this model (rotation, etc.) to see
+                      what it looks like to have a model of such construction
+                      system. Maybe we could color the different elements (to
+                      see what can be done with Kirell)
+                    </p>
+                  </div>
+                </div>
+                <!-- Create CABLES placeholder with width and height -->
+                <div id="cables-container-4">
+                  <div id="img-3d-p4">
+                    <img
+                      src="images/part4/loading.jpg"
+                      alt="3D Viewer loading..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-										<h2>IBOIS</h2>
-									</div>
-									<div class="col-sm-6 col-lg-3 text-center" data-animate="bounceIn">
+          <!--Section 5-->
+          <section id="section5" class="page-section">
+            <div class="container">
+              <div class="row align-items-center col-mb-50">
+                <div class="col-md-12 text-center text-md-start">
+                  <div class="heading-block border-bottom-0">
+                    <h4>Stacking algo</h4>
+                  </div>
+                  <p>
+                    With scanned stones, we first use spherical harmonics to
+                    simplify the mesh.
+                  </p>
+                  <p>
+                    With the processed mesh, we build virtually a masonry wall
+                    that is 1.5 m long, 0.5 m high and 0.7 m wide. The generated
+                    stone wall resembles traditional dry stone masonry in the
+                    sense that the facades and corners tilt towards the interior
+                    and that interlocking can be found in all directions.
+                  </p>
+                  <p>
+                    We can also build walls of other dimensions, towers of
+                    various heights, etc…
+                  </p>
+                </div>
+              </div>
+              <!--________________________________________________________________________________________________________________________________________-->
+              <div id="cables-container-5">
+                <div id="img-3d-p5">
+                  <img
+                    src="images/part5/loading.jpg"
+                    alt="3D Viewer loading..."
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
 
-										<h2>ENACIT4Research</h2>
-									</div>
-								</div>
+          <!--Section 6-->
+          <section id="section-six" class="page-section">
+            <div class="section my-0">
+              <div class="container">
+                <div class="row align-items-center col-mb-50">
+                  <div class="col-md-7 text-center text-md-start">
+                    <div class="heading-block border-bottom-0">
+                      <h4>AR Assembly</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4 col-mb-50">
+                  <div class="col-lg-6">
+                    <video width="100%" height="100%" autoplay loop muted>
+                      <source src="images/part4/Media1.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div class="col-lg-6">
+                    <div>
+                      <img
+                        src="images/part6/Main_video.png"
+                        width="60%"
+                        height="60%"
+                        style="margin-bottom: 15px; margin-left: 20px"
+                      />
+                    </div>
+                    <div
+                      class="heading-block border-bottom-0"
+                      style="margin-bottom: 15px"
+                    >
+                      <span class="before-heading">Legend</span>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Eveniet quam esse excepturi, quae doloribus consequatur
+                      aliquam necessitatibus voluptates saepe error fugit
+                      reiciendis alias natus veritatis tempore exercitationem
+                      magni voluptatem adipisci.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-							</div>
-						</div>
-					</section>-->
+          <!--Contributors-->
+          <section class="page-section">
+            <div>
+              <div class="container">
+                <div class="heading-block topmargin-sm center">
+                  <h3>Contributors</h3>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 bottommargin">
+                    <div class="team">
+                      <div class="team-image"></div>
+                      <div class="team-desc team-desc-bg">
+                        <a href="https://www.epfl.ch/labs/ibois/ "
+                          ><img src="images/labo/IBOIS.jpg" alt="IBOIS"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 bottommargin">
+                    <div class="team">
+                      <div class="team-image"></div>
+                      <div class="team-desc team-desc-bg">
+                        <a href="https://www.epfl.ch/labs/manslab/"
+                          ><img
+                            id="img-test"
+                            src="images/labo/MANSLAB-2.jpg"
+                            alt="MANSLAB"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 bottommargin">
+                    <div class="team">
+                      <div class="team-image"></div>
+                      <div class="team-desc team-desc-bg">
+                        <a href="https://www.epfl.ch/labs/eesd/"
+                          ><img src="images/labo/EESD-4.png" alt="EESD"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 bottommargin">
+                    <div class="team">
+                      <div class="team-image"></div>
+                      <div class="team-desc team-desc-bg">
+                        <a href="https://it4r.super.site/"
+                          ><img src="images/labo/enacit4r.png" alt="ENAC-IT4R"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- #content end -->
 
-					<!--Section 1-->
-					<section id="section-one" class="page-section">					
-						<div class="container">
-							<div class="row align-items-center col-mb-50">
-								<div class="col-md-5 order-md-last">
-									<img src="images/part1/Tour2.JPG.jpg" data-animate="fadeInUp" data-delay="100" alt="Chrome">
-								</div>	
-								<div class="col-md-7 text-center text-md-start">
-									<div class="heading-block border-bottom-0">
-										<h4>Historical context & research Question</h4>									
-									</div>
-									<p>There are several types of hybrid timber-stone construction around the world. The most impressive is the Kath kuni construction type of the northern parts of India. This regions is known for his earthquake frequencies. Nevertheless you can find 30 ff/meter high towers which are very old and survives several earthquakes.</p>								
-								</div>
-							</div>
-						</div>					
-					</section>
+      <!-- Automatically moved and resized -->
+      <canvas id="glcanvas"></canvas>
+    </div>
+    <!-- #wrapper end -->
 
-							<!--Section2-->
-					<section id="section-two" class="page-section">
-						<div class="section my-0">   
-							<div class="container">
-								<div class="row align-items-center col-mb-50">
-									<div class="col-md-12 text-center text-md-start">
-										<div class="heading-block border-bottom-0">
-											<h4>Students Mockups</h4>
-										</div>
-										<p>To explore different possibilities of designing a hybrid timber-stone construction we did an exercise with the student of the MANSLAB (Bachelor). The outcome are mockups in the scale 1/10. They explored the nature of the wood and the possibilities of prefabricated modules in the hope to improve the building process.</p>
-									</div>
-								</div>
-								<div class="masonry-thumbs grid-container grid-4"   data-lightbox="gallery">
-									<a class="grid-item" href="images/part2/full/0_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/0_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/1_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/1_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/2_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/2_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/3_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/3_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/4_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/4_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/5_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/5_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/6_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/6_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/7_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/7_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/8_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/8_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/9_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/9_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/10_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/10_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/11_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/11_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/12_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/12_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/13_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/13_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/14_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/14_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/15_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/15_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/16_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/16_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/17_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/17_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/18_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/18_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/19_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/19_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/20_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/20_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/21_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/21_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/22_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/22_sec1.jpg" alt="Gallery Thumb 1"></a>
-									<a class="grid-item" href="images/part2/full/23_sec1.jpg" data-lightbox="gallery-item"><img src="images/part2/23_sec1.jpg" alt="Gallery Thumb 1"></a>
-								</div>
-						</div>						
-					</section>
-
-						<!--Section3-->
-					<section id="section-three" class="page-section" style="margin-top: 50px; margin-bottom: 50px;">
-						<div class="container">
-							<div class="row align-items-center col-mb-50" >
-								<div class="col-md-5 order-md-last">
-									<img src="images/part3/Capture.JPG" data-animate="fadeInUp" data-delay="100" alt="Building of the wall">
-								</div>	
-								<div class="col-md-7 text-center text-md-start">
-									<div class="heading-block border-bottom-0">
-										<h4>Building of the wall</h4>									
-									</div>	
-									<p>To learn about the dry stone stacking technique we filmed the craftsmen building a wall of 1,5m length, 0,7m width and 1,5m height. The stone has been selected by the experimented builder in a stone quarry near the EPFL. A second wall has been built by the same craftsmen and the same wood, but with scrub stone of an other quarry. </p>
-									<p>The result of the second wall is not very convincing. </p>								
-								</div>
-							</div>
-						</div>
-					</section>
-
-							<!--Section 4-->
-					<section id="section4" class="page-section">
-						<div class="section my-0">
-							<div class="container">
-								<div class="row align-items-center col-mb-20" >
-									<div class="col-md-7 text-center text-md-start">
-										<div class="heading-block border-bottom-0">
-											<h4>Scanning “Digital Twin”</h4>
-										</div>
-									</div>
-									<div class="col-md-12 text-center text-md-start">
-
-										<p>Paragraph explaining the data acquisition process with LiDAR scan and the reconstruction method. Description of the small video above that will need to be done (not yet done due to the scanning hardware problem).</p>
-										<p>Paragraph explaining the final model from point cloud. User could navigate in this model (rotation, etc.) to see what it looks like to have a model of such construction system. Maybe we could color the different elements (to see what can be done with Kirell)</p>
-									</div>
-								</div>								
-								<!-- Create CABLES placeholder with width and height -->
-								<div id="cables-container-4">
-									<div id="img-3d-p4"><img src="images/part4/loading.jpg" alt="3D Viewer loading..."></div>
-								</div>
-							</div>
-						</div>
-					</section>
-		
-					<!--Section 5-->
-					<section id="section5" class="page-section">				
-						<div class="container">
-							<div class="row align-items-center col-mb-50" >
-								<div class="col-md-12 text-center text-md-start">
-									<div class="heading-block border-bottom-0">
-										<h4>Stacking algo</h4>	
-									</div>
-									<p>With scanned stones, we first use spherical harmonics to simplify the mesh. </p>
-									<p>With the processed mesh, we build virtually a masonry wall that is 1.5 m long, 0.5 m high and 0.7 m wide. The generated stone wall resembles traditional dry stone masonry in the sense that the facades and corners tilt towards the interior and that interlocking can be found in all directions.</p>
-									<p>We can also build walls of other dimensions, towers of various heights, etc… </p>
-								</div>
-							</div>
-							<!--________________________________________________________________________________________________________________________________________-->						
-							<div id="cables-container-5">
-								<div id="img-3d-p5"><img src="images/part5/loading.jpg" alt="3D Viewer loading..."></div>
-							</div>
-						</div>	
-					</section>
-							
-					<!--Section 6-->
-					<section id="section-six" class="page-section">
-						<div class="section my-0">
-							<div class="container">
-								<div class="row align-items-center col-mb-50" >
-									<div class="col-md-7 text-center text-md-start">
-										<div class="heading-block border-bottom-0">
-											<h4>AR Assembly</h4>
-										</div>
-									</div>
-								</div>	
-								<div class="row mt-4 col-mb-50">	
-									<div class="col-lg-6">
-										<video width="100%" height="100%"   autoplay loop muted>
-											<source src="images/part4/Media1.mp4" type="video/mp4" />								
-											Your browser does not support the video tag.
-											</video>
-									</div>	
-									<div class="col-lg-6">
-										<div>
-											<img src="images/part6/Main_video.png" width="60%" height="60%" style="margin-bottom: 15px; margin-left: 20px;">
-										</div>
-										<div class="heading-block border-bottom-0" style="margin-bottom: 15px;">
-											<span class="before-heading">Legend</span>										
-										</div>
-										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet quam esse excepturi, quae doloribus consequatur aliquam necessitatibus voluptates saepe error fugit reiciendis alias natus veritatis tempore exercitationem magni voluptatem adipisci.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
-					<!--Contributors-->
-					<section class="page-section">
-						<div>
-							<div class="container">	
-								<div class="heading-block topmargin-sm center">
-									<h3>Contributors</h3>
-								</div>	
-								<div class="row">	
-									<div class="col-lg-3 col-md-6 bottommargin">	
-										<div class="team">
-											<div class="team-image">											
-											</div>
-											<div class="team-desc team-desc-bg">
-												<a href="https://www.epfl.ch/labs/ibois/ "><img src="images/labo/IBOIS.jpg" alt="IBOIS"></a>	
-											</div>
-										</div>	
-									</div>	
-									<div class="col-lg-3 col-md-6 bottommargin">	
-										<div class="team">
-											<div class="team-image">											
-											</div>
-											<div class="team-desc team-desc-bg">											
-												<a href="https://www.epfl.ch/labs/manslab/"><img id="img-test" src="images/labo/MANSLAB-2.jpg" alt="MANSLAB"></a>																																		
-											</div>
-										</div>	
-									</div>	
-									<div class="col-lg-3 col-md-6 bottommargin">	
-										<div class="team">
-											<div class="team-image">											
-											</div>
-											<div class="team-desc team-desc-bg">
-												
-												<a href="https://www.epfl.ch/labs/eesd/"><img src="images/labo/EESD-4.png" alt="EESD"></a>																							
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-3 col-md-6 bottommargin">	
-										<div class="team">
-											<div class="team-image">											
-											</div>
-											<div class="team-desc team-desc-bg">
-												<a href="https://it4r.super.site/"><img src="images/labo/enacit4r.png" alt="ENAC-IT4R"></a>
-											</div>
-										</div>	
-									</div>	
-								</div>	
-							</div>
-						</div>
-					</section>				
-				</div>
-			</section><!-- #content end -->
-
-			<!-- Automatically moved and resized -->
-			<canvas id="glcanvas"></canvas>
-			<!-- <canvas id="glcanvas" width="100vw" height="100vh"></canvas> -->
-		</div><!-- #wrapper end -->
-
-		<!-- Go To Top
+    <!-- Go To Top
 		============================================= -->
-		<div id="gotoTop" class="icon-angle-up"></div>
+    <div id="gotoTop" class="icon-angle-up"></div>
 
-		<!-- JavaScripts
+    <!-- JavaScripts
 		============================================= -->
-		<script src="js/jquery.js"></script>
-		<script src="js/plugins.min.js"></script>
-		<!-- <script src="js/plugins.onepage.js"></script>
-		<script src="js/plugins.parallax.js"></script>
-		<script src="js/plugins.lightbox.js"></script>
-		<script src="js/plugins.lazyload.js"></script> -->
-		<script src="js/functions.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/functions.js"></script>
 
-		<!-- Cables -->
-		<script type="text/javascript" src="js/patch.js" async></script>
-		<script src="js/embed-cables.js"></script>
-
-	</body>
+    <!-- Cables -->
+    <script type="text/javascript" src="js/patch.js" async></script>
+    <script src="js/embed-cables.js"></script>
+  </body>
 </html>
