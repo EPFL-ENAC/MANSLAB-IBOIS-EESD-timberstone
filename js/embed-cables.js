@@ -113,16 +113,6 @@ function createAPI() {
     window.CABLES.API.moveCanvasToPlaceholder = moveCanvasToPlaceholder;
 }
 
-function registerCallbacks() {
-    let windowEl = $(window);
-    let onePageScrollInterval = setInterval( () => {
-		if ('pluginOnePageModuleReady' in window.scwEvents) {
-			windowEl.scrollEnd(checkChangeSection, 500);
-			clearInterval(onePageScrollInterval);
-		}
-	}, 1000);
-}
-
 (function(){
 
 // disable rubberband effect on mobile devices
@@ -137,7 +127,11 @@ document.getElementById('glcanvas').addEventListener('touchmove',
 
 function patchFinishedLoading(patch) {
     createAPI();
-    registerCallbacks();
+
+    // we register the callback (window.CABLES.API.checkChangeSection)
+    // in the plugins.onepage.js directly instead of here
+    // mainly: to avoid concurent calls
+    // ---> the consequence was that we lost the onepage plugin behavior for the nav-bar
 }
 
 document.addEventListener('CABLES.jsLoaded', function (event) {
