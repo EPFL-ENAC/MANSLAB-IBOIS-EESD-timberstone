@@ -6,6 +6,13 @@ window.CABLES = window.CABLES || {};
 SECTION_VAR = "partId";
 OBJ_VAR = "objId";
 SHOW_SIDEBAR = "showSidebar";
+SLIDER_VALUE = "sliderConstructionValue";
+
+//to replace the Cables Slider. Ti use the HTML Slider
+function moveSlider(num){
+  const slider = CABLES.patch.getVar(SLIDER_VALUE);
+  slider.setValue(num);
+}
 
 function getCurrentCablesSection() {
   const curSec = CABLES.patch.getVar(SECTION_VAR);
@@ -108,6 +115,7 @@ function createAPI() {
   window.CABLES.API.loadObjInSection = loadObjInSection;
   window.CABLES.API.checkChangeSection = checkChangeSection;
   window.CABLES.API.moveCanvasToPlaceholder = moveCanvasToPlaceholder;
+  window.CABLES.API.moveSlider = moveSlider;
 }
 
 (function () {

@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="css/components/ion.rangeslider.css"
+      type="text/css"
+    />
 
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -578,6 +583,13 @@
                   />
                 </div>
               </div>
+
+              <div class="col-lg-12 col-md-12 bottommargin-sm">
+                <div class="white-section">
+                  <label>Move to build the wall</label>
+                  <input class="range_02" id="myRange" />
+                </div>
+              </div>
             </div>
           </section>
 
@@ -698,6 +710,9 @@
     <!-- JavaScripts
 		============================================= -->
     <script src="js/jquery.js"></script>
+    <!-- Range Slider Plugin -->
+    <script src="js/components/rangeslider.min.js"></script>
+    <script src="js/components/moment.js"></script>
 
     <script src="js/plugins.onepage.js"></script>
     <script src="js/plugins.parallax.js"></script>
@@ -709,5 +724,21 @@
     <!-- Cables -->
     <script type="text/javascript" src="js/patch.js" async></script>
     <script src="js/embed-cables.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".range_02").ionRangeSlider({
+          min: 1,
+          max: 26,
+          from: 1,
+        });
+      });
+
+      let slider = document.getElementById("myRange");
+
+      slider.oninput = function () {
+        // output.innerHTML = this.value;
+        window.CABLES.API.moveSlider(this.value);
+      };
+    </script>
   </body>
 </html>
