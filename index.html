@@ -240,7 +240,7 @@
                   <div class="heading-block">
                     <h1>Visual Abstract - Key results.</h1>
                   </div>
-                  <div class="lead">
+                  <div>
                     <ul>
                       <li>
                         How can we improve the application of such kind of
@@ -537,6 +537,8 @@
                   </div>
                 </div>
                 <!-- Create CABLES placeholder with width and height -->
+                <button id="Wall1" onclick="changeObj(4,1)">Wall 1</button>
+                <button id="Wall2" onclick="changeObj(4,2)">Wall 2</button>
                 <div id="cables-container-4">
                   <div id="img-3d-p4">
                     <img
@@ -574,6 +576,7 @@
                   </p>
                 </div>
               </div>
+
               <!--________________________________________________________________________________________________________________________________________-->
               <div id="cables-container-5">
                 <div id="img-3d-p5">
@@ -583,8 +586,11 @@
                   />
                 </div>
               </div>
-
-              <div class="col-lg-12 col-md-12 bottommargin-sm">
+              <div>
+                <button id="Wall3" onclick="changeObj(5,1)">Wall 1</button>
+                <button id="Wall4" onclick="changeObj(5,3)">Stones</button>
+              </div>
+              <div class="col-lg-12 col-md-12 bottommargin-sm" id="mySlider">
                 <div class="white-section">
                   <label>Move to build the wall</label>
                   <input class="range_02" id="myRange" />
@@ -739,6 +745,26 @@
         // output.innerHTML = this.value;
         window.CABLES.API.moveSlider(this.value);
       };
+
+      function changeObj(sectionId, objId) {
+        if (sectionId === 5) {
+          console.log("PASS");
+          let slider = document.getElementById("mySlider");
+          if (objId !== 1) {
+            console.log("PASS2");
+
+            slider.style.display = "none";
+            console.log(slider.style.display);
+          } else {
+            console.log("PASS3");
+
+            slider.style.display = "block";
+          }
+        }
+
+        console.log(objId);
+        window.CABLES.API.loadObjInSection(sectionId, objId);
+      }
     </script>
   </body>
 </html>
