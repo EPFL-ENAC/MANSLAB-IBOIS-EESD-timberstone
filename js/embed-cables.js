@@ -8,6 +8,14 @@ OBJ_VAR = "objId";
 SHOW_SIDEBAR = "showSidebar";
 SLIDER_VALUE = "sliderConstructionValue";
 
+function resetObjecValue(){
+  const curObj = CABLES.patch.getVar(OBJ_VAR);
+  curObj.setValue(1);
+  let slider = document.getElementById("mySlider");
+  slider.style.display = "block";
+
+}
+
 //to replace the Cables Slider. Ti use the HTML Slider
 function moveSlider(num){
   const slider = CABLES.patch.getVar(SLIDER_VALUE);
@@ -94,6 +102,10 @@ function moveCanvasToPlaceholder(sectionId) {
     img3d.style.display = "block";
     return;
   }
+  resetObjecValue();
+  const curObj = CABLES.patch.getVar(OBJ_VAR);
+  console.log("______OBJVALUE__________");
+  console.log(curObj.getValue());
 
   glcanvas.display = "block";
   glcanvas.position = "relative";
