@@ -553,14 +553,15 @@
                   <button
                     id="Wall1"
                     class="button button-border button-rounded button-teal"
-                    onclick="changeObj(4,1)"
+                    onclick="changeObj(4,1, 'Wall1')"
+                    disabled
                   >
                     Wall 1
                   </button>
                   <button
                     id="Wall2"
                     class="button button-border button-rounded button-teal"
-                    onclick="changeObj(4,2)"
+                    onclick="changeObj(4,2,'Wall2')"
                   >
                     Wall 2
                   </button>
@@ -610,14 +611,15 @@
                   <button
                     id="Wall3"
                     class="button button-border button-rounded button-teal"
-                    onclick="changeObj(5,1)"
+                    onclick="changeObj(5,1, 'Wall3')"
+                    disabled
                   >
                     Wall 1
                   </button>
                   <button
                     id="Wall4"
                     class="button button-border button-rounded button-teal"
-                    onclick="changeObj(5,3)"
+                    onclick="changeObj(5,3,'Wall4')"
                   >
                     Stones
                   </button>
@@ -764,6 +766,8 @@
     <script type="text/javascript" src="js/patch.js" async></script>
     <script src="js/embed-cables.js"></script>
     <script>
+      let lastSelectedButtonP4 = document.getElementById("Wall1");
+      let lastSelectedButtonP5 = document.getElementById("Wall3");
       $(document).ready(function () {
         $(".range_02").ionRangeSlider({
           min: 1,
@@ -779,23 +783,30 @@
         window.CABLES.API.moveSlider(this.value);
       };
 
-      function changeObj(sectionId, objId) {
+      function changeObj(sectionId, objId, buttonId) {
+        //If we are on section 5 we display the slider only for the object one
         if (sectionId === 5) {
-          console.log("PASS");
+          //Manage buttons activation
+          lastSelectedButtonP5.disabled = false;
+          let selectedButtonP5 = document.getElementById(buttonId);
+          selectedButtonP5.disabled = true;
+          lastSelectedButtonP5 = selectedButtonP5;
+
           let slider = document.getElementById("mySlider");
           if (objId !== 1) {
-            console.log("PASS2");
-
             slider.style.display = "none";
             console.log(slider.style.display);
           } else {
-            console.log("PASS3");
-
             slider.style.display = "block";
           }
+        } else {
+          //Manage buttons activation
+          lastSelectedButtonP4.disabled = false;
+          let selectedButtonP4 = document.getElementById(buttonId);
+          selectedButtonP4.disabled = true;
+          lastSelectedButtonP4 = selectedButtonP4;
         }
 
-        console.log(objId);
         window.CABLES.API.loadObjInSection(sectionId, objId);
       }
     </script>
