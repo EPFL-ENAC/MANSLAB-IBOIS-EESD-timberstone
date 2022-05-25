@@ -116,7 +116,7 @@ function moveCanvasToPlaceholder(sectionId) {
   // Move canvas
   img3d.style.display = "none";
   dest.append(glcanvas, sidebar);
-  showCablesSidebar(false);
+  showCablesSidebar(true);
 }
 
 // INTERNAL
