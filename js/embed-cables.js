@@ -8,12 +8,24 @@ OBJ_VAR = "objId";
 SHOW_SIDEBAR = "showSidebar";
 SLIDER_VALUE = "sliderConstructionValue";
 
+/*Reset the object displayed to num 1
+Otherwise when the user switch the object displayed in a section,
+ther is an error when we change section, Cable keep the last value and try to display
+an object who doesn't exist in the section*/
 function resetObjecValue(){
   const curObj = CABLES.patch.getVar(OBJ_VAR);
   curObj.setValue(1);
   let slider = document.getElementById("mySlider");
   slider.style.display = "block";
 
+  document.getElementById("Layer1").disabled = true;
+  document.getElementById("BuildWall").disabled = true;
+  document.getElementById("Stones").disabled = false;
+  lastSelectedButton['4'] = document.getElementById("Layer1");
+  lastSelectedButton['5'] = document.getElementById("BuildWall");
+  for (let i = 2; i < 3; i++) {
+    document.getElementById("Layer"+i).disabled = false;
+  }
 }
 
 //to replace the Cables Slider. Ti use the HTML Slider

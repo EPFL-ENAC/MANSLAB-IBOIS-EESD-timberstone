@@ -14,12 +14,14 @@ $(document).ready(function () {
   };
 
   let lastSelectedButton = {
-    '4': document.getElementById("Wall1"),
-    '5': document.getElementById("Wall3"),
+    '4': document.getElementById("Layer1"),
+    '5': document.getElementById("BuildWall"),
   };
   function handleButton(sectionId, buttonId) {
     // sectionId: string -> corresponding to lastSelectedButton key
     // buttonId: string -> corresponding to button dom ID
+
+    
     lastSelectedButton[sectionId].disabled = false;
     let selectedButton = document.getElementById(buttonId);
     selectedButton.disabled = true;
