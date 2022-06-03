@@ -727,7 +727,7 @@
                   <button
                     id="Wall3"
                     class="button button-border button-rounded button-teal"
-                    onclick="changeObj(5,1, 'Wall3')"
+                    onclick="changeObjSection5(5,1, 'Wall3')"
                     disabled
                   >
                     Wall 1
@@ -735,7 +735,7 @@
                   <button
                     id="Wall4"
                     class="button button-border button-rounded button-teal"
-                    onclick="changeObj(5,3,'Wall4')"
+                    onclick="changeObjSection5(5, 3,'Wall4')"
                   >
                     Stones
                   </button>
@@ -879,52 +879,9 @@
     <script src="js/functions.js"></script>
 
     <!-- Cables -->
-    <script type="text/javascript" src="js/patch.js" async></script>
+    <script src="js/object-swap.js"></script>
     <script src="js/embed-cables.js"></script>
-    <script>
-      let lastSelectedButtonP4 = document.getElementById("Wall1");
-      let lastSelectedButtonP5 = document.getElementById("Wall3");
-      $(document).ready(function () {
-        $(".range_02").ionRangeSlider({
-          min: 1,
-          max: 26,
-          from: 1,
-        });
-      });
-
-      let slider = document.getElementById("myRange");
-
-      slider.oninput = function () {
-        // output.innerHTML = this.value;
-        window.CABLES.API.moveSlider(this.value);
-      };
-
-      function changeObj(sectionId, objId, buttonId) {
-        //If we are on section 5 we display the slider only for the object one
-        if (sectionId === 5) {
-          //Manage buttons activation
-          lastSelectedButtonP5.disabled = false;
-          let selectedButtonP5 = document.getElementById(buttonId);
-          selectedButtonP5.disabled = true;
-          lastSelectedButtonP5 = selectedButtonP5;
-
-          let slider = document.getElementById("mySlider");
-          if (objId !== 1) {
-            slider.style.display = "none";
-            console.log(slider.style.display);
-          } else {
-            slider.style.display = "block";
-          }
-        } else {
-          //Manage buttons activation
-          lastSelectedButtonP4.disabled = false;
-          let selectedButtonP4 = document.getElementById(buttonId);
-          selectedButtonP4.disabled = true;
-          lastSelectedButtonP4 = selectedButtonP4;
-        }
-
-        window.CABLES.API.loadObjInSection(sectionId, objId);
-      }
+    <script type="text/javascript" src="js/patch.js"></script>
     </script>
     <!--Newbranch demo-->
   </body>
