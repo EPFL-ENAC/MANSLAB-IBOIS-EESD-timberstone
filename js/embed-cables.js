@@ -23,7 +23,7 @@ function resetObjecValue(){
   document.getElementById("Stones").disabled = false;
   lastSelectedButton['4'] = document.getElementById("Layer1");
   lastSelectedButton['5'] = document.getElementById("BuildWall");
-  for (let i = 2; i < 3; i++) {
+  for (let i = 2; i < 10; i++) {
     document.getElementById("Layer"+i).disabled = false;
   }
 }
