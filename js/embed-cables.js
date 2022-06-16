@@ -23,7 +23,7 @@ function resetObjecValue(){
   document.getElementById("Stones").disabled = false;
   lastSelectedButton['4'] = document.getElementById("Layer1");
   lastSelectedButton['5'] = document.getElementById("BuildWall");
-  for (let i = 2; i < 9; i++) {
+  for (let i = 2; i < 8; i++) {
     document.getElementById("Layer"+i).disabled = false;
   }
 }
@@ -128,7 +128,7 @@ function moveCanvasToPlaceholder(sectionId) {
   // Move canvas
   img3d.style.display = "none";
   dest.append(glcanvas, sidebar);
-  showCablesSidebar(true);
+  showCablesSidebar(false);
 }
 
 // INTERNAL
