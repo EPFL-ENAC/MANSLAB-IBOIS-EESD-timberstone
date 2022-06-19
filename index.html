@@ -548,14 +548,15 @@
                   <div class="heading-block border-bottom-0">
                     <h3>Building of the wall</h3>
                   </div>
-                  <p>
-                    Digital means have to learn from human gestures:
-                    An experienced craftsman (Stonework’s Lippert gmbh, Evillard) built a timber laced wall of 1,5m length, 0,7m width and 1,5m height. 
-                    To push the economy of means to its extreme the use of offcuts from a quarry interested us, but for Urs there is no waste in construction with dry stones. To fully grasp this idea, we asked him to build two walls: one with rock falls from Guber Natursteine and the other with stones selected by his expert eye from the Plasselb quarry. All his gestures have been photographed and filmed in order to be able to imitate his actions with digital means. To be able to scan the stones in place in 3D, we dismantled the stones one by one and again filmed and documented the position of each stone.
-                    The most difficult moment to grasp is that of choosing the stone of its size with the chisel. As for the wall made with offcuts, it should be noted that the result is less satisfactory in terms of the homogeneity of its appearance, but above all in terms of the certainly lower physical resistance. Scraps of kitchen worktops are too smooth and do not have good adhesion between them.
-                    
-                  </p>
-                  
+                  <div class="row col-mb-50 mb-0">
+                    <div class="col-md-6">
+                      Digital means have to learn from human gestures:
+                      An experienced craftsman (Stonework’s Lippert gmbh, Evillard) built a timber laced wall of 1,5m length, 0,7m width and 1,5m height. 
+                      To push the economy of means to its extreme the use of offcuts from a quarry interested us, but for Urs there is no waste in construction with dry stones. To fully grasp this idea, we asked him to build two walls: one with rock falls from Guber Natursteine and the other with stones selected by his expert eye from the Plasselb quarry. All his gestures have been photographed and filmed in order to be able to imitate his actions with digital means.</div>
+                    <div class="col-md-6">
+                      To be able to scan the stones in place in 3D, we dismantled the stones one by one and again filmed and documented the position of each stone.
+                      The most difficult moment to grasp is that of choosing the stone of its size with the chisel. As for the wall made with offcuts, it should be noted that the result is less satisfactory in terms of the homogeneity of its appearance, but above all in terms of the certainly lower physical resistance. Scraps of kitchen worktops are too smooth and do not have good adhesion between them.</div>
+                    </div>
                 </div>
               </div>
               <div
@@ -754,14 +755,15 @@
                       <h3>Scanning “Digital Twin”</h3>
                     </div>
                   </div>
-                  <div class="col-md-12 text-center text-md-start">
+                </div>
+                <div class="row col-mb-50 mb-0">
+                  <div class="col-md-6">
                     <p>The process of building the walls in laboratory conditions with expert craftsmen made it possible to reconstruct the first precise digital models of this vernacular building technique and explore in detail its composition.</p>
-                     <p> To achieve this ambitious goal, the IBOIS research team developed an open-source tool for point cloud processing in computer-aided design called <a href="https://github.com/ibois-epfl/Cockroach">“Cockroach”</a>. Based on LiDAR scans, the wall is digitally reconstructed layer by layer (see animation below) while the craftsmen build the wall. Later, the positioning of the stones and their exact geometries are retrieved with the help of the "Cockroach" tool (see layer 6).</p>
-                     <p> This key stage of the project allowed us to archive for the first time an accurate 3D CAD model of this type of construction but also to obtain essential information (such as the geometry of the stones and their placement) for the following stages of the project (scroll down for more!).</p>
-                     <p> <a href="https://infoscience.epfl.ch/record/293827"> Click for more information on “Cockroach” Plugin for CAD </a></p>
-
-                    
-
+                    <p>To achieve this ambitious goal, the IBOIS research team developed an open-source tool for point cloud processing in computer-aided design called “Cockroach”. Based on LiDAR scans, the wall is digitally reconstructed layer by layer (see animation below) while the craftsmen build the wall. Later, the positioning of the stones and their exact geometries are retrieved with the help of the <a href="https://github.com/ibois-epfl/Cockroach">"Cockroach"</a> tool (see layer 6).</p>
+                  </div>
+                  <div class="col-md-6">
+                    <p>This key stage of the project allowed us to archive for the first time an accurate 3D CAD model of this type of construction but also to obtain essential information (such as the geometry of the stones and their placement) for the following stages of the project (scroll down for more!).</p>
+                    <p> <a href="https://infoscience.epfl.ch/record/293827"> Click for more information on “Cockroach” Plugin for CAD </a></p>
                   </div>
                 </div>
                 <!-- Create CABLES placeholder with width and height -->
@@ -848,15 +850,24 @@
                   <div class="heading-block border-bottom-0">
                     <h3>Stacking algorithm: Towards robotic construction</h3>
                   </div>
-                  <p>
-                    Dry stone masonry complements and enhances the worldwide landscape, in the form of retaining walls, arch bridges, towers, and fortifications. We aim at developing a construction robot that is capable of building such structures. To this end, a stacking algorithm is proposed to place stones in sequence and form a dry-joint masonry wall, no matter whatever shape and size of the stones given.
-                  </p>
-                  <p>
-                    The proposed algorithm is a combination of artificial intelligence and mason’s rules-of-thumb. We translate mason’s practices into a set of nonlinear equations, including maximising the geometric similarity of the stone shape and the base shape, minimising the potential energy of stones, and prioritising placement from boundaries. The best position and pose of a stone are found by solving an optimization problem formulated from the above equations. We aim to find the solution from all possibilities. The stone can be moved into the bounding volume of the target wall with any pose, as long as it does not violate stones that are already in place. Such freedom leads to an enormous amount of possible combinations of position and pose. To efficiently find the solution, we use a heuristics optimization solver, which is used to <a href="https://www.sciencedirect.com/science/article/pii/S0997753822001218?via%3Dihub">generate 3D mortar-joint masonry geometric models</a> . We also use <a href="https://www.sciencedirect.com/science/article/pii/S0032591021006720?via%3Dihub">spherical harmonics</a> to simplify the stone mesh given, which allows fast evaluation of each stone and accelerates the optimization process. Moreover, we analyse the dynamics of stones using the discrete element modelling method, to guarantee the stability of placement under gravity.
-                  </p>
-                  <p>
-                    We show here one example of a stacked wall. You can go through the construction process by sliding the bar on the bottom. The generated stone wall resembles traditional dry stone masonry in the sense that the facades and corners tilt towards the interior and that interlocking can be found in all directions. 
-                  </p>
+                  <div class="row col-mb-50 mb-0">
+                    <div class="col-md-6">
+                      <p>
+                        Dry stone masonry complements and enhances the worldwide landscape, in the form of retaining walls, arch bridges, towers, and fortifications. We aim at developing a construction robot that is capable of building such structures. To this end, a stacking algorithm is proposed to place stones in sequence and form a dry-joint masonry wall, no matter whatever shape and size of the stones given.
+                      </p>
+                      <p>
+                        The proposed algorithm is a combination of artificial intelligence and mason’s rules-of-thumb. We translate mason’s practices into a set of nonlinear equations, including maximising the geometric similarity of the stone shape and the base shape, minimising the potential energy of stones, and prioritising placement from boundaries. The best position and pose of a stone are found by solving an optimization problem formulated from the above equations. We aim to find the solution from all possibilities. The stone can be moved into the bounding volume of the target wall with any pose, as long as it does not violate stones that are already in place.
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <p>Such freedom leads to an enormous amount of possible combinations of position and pose. To efficiently find the solution, we use a heuristics optimization solver, which is used to <a href="https://www.sciencedirect.com/science/article/pii/S0997753822001218?via%3Dihub">generate 3D mortar-joint masonry geometric models</a> . We also use <a href="https://www.sciencedirect.com/science/article/pii/S0032591021006720?via%3Dihub">spherical harmonics</a> to simplify the stone mesh given, which allows fast evaluation of each stone and accelerates the optimization process. Moreover, we analyse the dynamics of stones using the discrete element modelling method, to guarantee the stability of placement under gravity.</p>
+                      <p>
+                        We show here one example of a stacked wall. You can go through the construction process by sliding the bar on the bottom. The generated stone wall resembles traditional dry stone masonry in the sense that the facades and corners tilt towards the interior and that interlocking can be found in all directions. 
+                      </p>
+                    </div>
+                  </div>
+
+
                 </div>
               </div>
 
