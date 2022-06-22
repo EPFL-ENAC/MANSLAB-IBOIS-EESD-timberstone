@@ -9598,7 +9598,9 @@ body:not(.device-touch) .button {
   line-height: 1;
 }
 
-.button.button-border:not(.button-fill):hover {
+.button.button-border:not(.button-fill):hover,
+.button.button-border:not(.button-fill):disabled {
+  opacity: 0.65;
   background-color: #444;
   color: #fff;
   border-color: transparent !important;
@@ -9951,7 +9953,7 @@ body:not(.device-touch) .button.button-full strong {
 -----------------------------------------------------------------*/
 .button.disabled,
 .button:disabled {
-  opacity: 0.65 !important;
+  opacity: 1 !important;
   pointer-events: none !important;
 }
 
@@ -9979,6 +9981,7 @@ body:not(.device-touch) .button.button-full strong {
 .button-3d.button-teal:hover,
 .button-reveal.button-teal:hover,
 .button-border.button-teal:hover,
+.button-border.button-teal:disabled,
 .button-border.button-teal.button-fill::before {
   background-color: #53777a !important;
 }
