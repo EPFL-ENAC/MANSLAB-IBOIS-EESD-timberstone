@@ -13080,6 +13080,12 @@ body:not(.device-touch) .clients-grid .grid-item a {
   position: relative;
 }
 
+.team {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
 .team-image > a,
 .team-image img {
   display: block;
