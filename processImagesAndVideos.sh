@@ -19,13 +19,13 @@ find . -depth -name '*.pdf' -delete;  \
 find . -depth -name '*.gif' -delete; \
 echo 'convert png to webp and remove png'; \
 find . -depth -type f -regex '.*\.\(png\)' \
-     -exec bash -c 'magick convert "$1" -quality 10 "${1%.png}.webp"; rm "$1"' _ '{}' \;
+     -exec bash -c 'magick convert "$1" -quality 15 "${1%.png}.webp"; rm "$1"' _ '{}' \;
 echo 'convert PNG to webp and remove PNG'; \
 find . -depth -type f -regex '.*\.\(PNG\)' \
-     -exec bash -c 'magick convert "$1" -quality 10 "${1%.PNG}.webp"; rm "$1"' _ '{}' \;
+     -exec bash -c 'magick convert "$1" -quality 15 "${1%.PNG}.webp"; rm "$1"' _ '{}' \;
 echo 'convert jpg to webp and remove jpg'; \
 find . -depth -type f -regex '.*\.\(jpg\)' \
-     -exec bash -c 'magick convert "$1" -quality 10 "${1%.jpg}.webp"; rm "$1"' _ '{}' \;
+     -exec bash -c 'magick convert "$1" -quality 15 "${1%.jpg}.webp"; rm "$1"' _ '{}' \;
 echo 'convert mp4 to mp4 optimized' ;\
 find . -depth -type f -regex '.*\.\(mp4\)' \
      -exec bash -c 'ffmpeg -y -i "$1" -crf 35 -c:v libx264 -b:v 2500k -profile:v high -pix_fmt yuv420p -color_primaries 1 -color_trc 1 -colorspace 1 -movflags +faststart -an "${1%.mp4}_2.mp4"; rm "$1"; mv "${1%.mp4}_2.mp4" $1;' _ '{}' \;
