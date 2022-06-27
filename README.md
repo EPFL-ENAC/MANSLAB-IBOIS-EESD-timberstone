@@ -23,6 +23,29 @@ Process on Meshlab:
 <img width="1278" alt="Screenshot 2022-03-29 at 15 04 37" src="https://user-images.githubusercontent.com/18381609/160621761-ef1f1adc-e9cb-4e02-b237-e7e331a3dbfe.png">
 <img width="594" alt="Screenshot 2022-03-29 at 15 05 03" src="https://user-images.githubusercontent.com/18381609/160621817-a0888c87-ef4f-4ad8-a500-6f1071e6dc3b.png">
 
+## Update images and videos in the CDN
+
+You'll need to run the processImagesAndVideos.sh script (we tested with the below versions):
+
+- make (GNU Make 3.81)
+- bash (GNU bash, version 3.2.57)
+- Image magick (Version: ImageMagick 7.1.0)
+- ffmpeg (ffmpeg version 5.0.1 with all flags)
+- Gnu find (findutils) for the script (find (GNU findutils) 4.9.0)
+- Gnu sed (gnu-sed 4.8)
+- s3cmd cli to upload to the epfl enac-it4r private cdn (s3cmd version 2.2.0)
+
+1. Download the latest version of the data as zip: https://drive.google.com/drive/folders/1vNSggsQBvzDQY3b8ubMwwwHj0JLyNQKe
+
+- Google Drive / ENAC-IT4R / Projects_Docs / MANSLAB-IBOIS-EESD-HybridTimberStoneStructure / Data for website / June2022_FinalText
+
+2. Unzip the archive
+3. Run 'Make' and copy paste the full path of the extracted zip file
+
+- IT should work as is, if you encounter any problem please verify first:
+  - you have properly configured s3cmd
+  - you have the access right
+
 ## Image and Video optimization
 
 - Image are converted using image magick to webp: `magick convert {}png -quality 10 {}webp`
