@@ -1,0 +1,36 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+
+canvas {
+	display: block;
+	position: relative;
+	outline:0;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#glcanvas {
+	display: block;
+	position: relative;
+	height: 700px;
+}
+
+#cables-container-4 {
+	display: block;
+	position: relative;
+	height: 700px;
+}
+
+#cables-container-5 {
+	height: 700px;
+	position: relative;
+}
