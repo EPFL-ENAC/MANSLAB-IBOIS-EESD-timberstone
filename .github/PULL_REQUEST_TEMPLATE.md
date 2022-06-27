@@ -1,12 +1,12 @@
 # Prework
 
-- [ ] I understand and agree to this repository's [code of conduct](https://github.com/EPFL-ENAC/unhcr-geneva-tech-hub-app/blob/main/CODE_OF_CONDUCT.md).
-- [ ] I understand and agree to this repository's [contributing guidelines](https://github.com/EPFL-ENAC/unhcr-geneva-tech-hub-app/blob/main/CONTRIBUTING.md).
-- [ ] I have already submitted an [issue](https://github.com/EPFL-ENAC/unhcr-geneva-tech-hub-app/issues) or [discussion thread](https://github.com/EPFL-ENAC/unhcr-geneva-tech-hub-app/discussions) to discuss my idea with the maintainers.
+- [ ] I understand and agree to this repository's [code of conduct](https://github.com/EPFL-ENAC/MANSLAB-IBOIS-EESD-timberstone/blob/main/CODE_OF_CONDUCT.md).
+- [ ] I understand and agree to this repository's [contributing guidelines](https://github.com/EPFL-ENAC/MANSLAB-IBOIS-EESD-timberstone/blob/main/CONTRIBUTING.md).
+- [ ] I have already submitted an [issue](https://github.com/EPFL-ENAC/MANSLAB-IBOIS-EESD-timberstone/issues) or [discussion thread](https://github.com/EPFL-ENAC/MANSLAB-IBOIS-EESD-timberstone/discussions) to discuss my idea with the maintainers.
 
 <!--
 Please make sure to read the Pull Request Guidelines:
-https://github.com/EPFL-ENAC/unhcr-geneva-tech-hub-app/blob/main/.github/CONTRIBUTING.md#pull-request-guidelines
+https://github.com/EPFL-ENAC/MANSLAB-IBOIS-EESD-timberstone/blob/main/CONTRIBUTING.md#pull-request-guidelines
 -->
 
 <!-- PULL REQUEST TEMPLATE -->
