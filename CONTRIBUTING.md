@@ -1,14 +1,14 @@
-# UNHCR - TSS Contributing Guide
+# MANSLAB-IBOIS-EESD-timberstone Contributing Guide
 
-Hi! Thanks for taking the time to contribute to unhcr-tss.
+Hi! Thanks for taking the time to contribute to MANSLAB-IBOIS-EESD-timberstone.
 
 - You can contribute in many ways \*
 
-* Join the unhcr-tss [discussion](https://github.com/EPFL-ENAC/unhcr-geneva-tech-hub-app/discussions)
+* Join the MANSLAB-IBOIS-EESD-timberstone [discussion](https://github.com/EPFL-ENAC/MANSLAB-IBOIS-EESD-timberstone/discussions)
 
 - Before submitting your contribution, please make sure to take a moment and read through the following guidelines \*
 
-* [Code of Conduct](https://github.com/EPFL-ENAC/unhcr-geneva-tech-hub-app/blob/main/.github/CODE_OF_CONDUCT.md)
+* [Code of Conduct](https://github.com/EPFL-ENAC/MANSLAB-IBOIS-EESD-timberstone/blob/main/CODE_OF_CONDUCT.md)
 * [Issue Reporting Guidelines](#issue-reporting-guidelines)
 * [Pull Request Guidelines](#pull-request-guidelines)
 * [Development Setup](#development-setup)
@@ -18,7 +18,7 @@ Hi! Thanks for taking the time to contribute to unhcr-tss.
 
 ## Issue Reporting Guidelines
 
-- Always use [ issue templates ](https://github.com/EPFL-ENAC/unhcr-geneva-tech-hub-app/issues/new/choose)
+- Always use [ issue templates ](https://github.com/EPFL-ENAC/MANSLAB-IBOIS-EESD-timberstone/issues/new/choose)
 - If you don't find a corresponding issue template please use the template to ask a new template
 
 ## Pull Request Guidelines
@@ -135,21 +135,6 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 - Avoid writing comment like "done" of "fixed" on each code review comment. Reviewers assume you’ll do all suggested changes, unless you have a reason not to do some of them.
 - Sometimes it’s okay to postpone changes — in this case you’ll need to add a ticket number to the pull request and to the code itself.
 
-## Development Setup
-
-You will need [Node.js](http://nodejs.org) **lts** and [npm](https://pnpm.io/). And also Gnu Make
-
-After cloning the repo, run:
-
-```bash
-$ make install # install the dependencies of the project
-```
-
-## Project Structure
-
-- **`couchdb`**: contains the data and database bootstrap code for couchdb
-- **`frontend`**: contains the source code. The codebase is written in typescript using class components for vue2 and vuetify as the library component. And ECharts as the chart library.
-
 ## Financial Contribution
 
 We also welcome financial contributions. Please contact us directly.
@@ -160,13 +145,8 @@ We follow a commit message convention, to have consistent git messages. The goal
 
 ## Credits
 
-Thank you to all the people who have already contributed to UNHCR repositories!
+Thank you to all the people who have already contributed this project!
 
-<a href="https://github.com/EPFL-ENAC/unhcr-geneva-tech-hub-app/graphs/contributors">
-    <a href="https://github.com/guilbep">
-        <img width="24px" height="24px" src="https://avatars.githubusercontent.com/u/161889?v=4" />
-    </a href="">
-    <a href="https://github.com/blueur">
-    <img width="24px" height="24px" src="https://avatars.githubusercontent.com/u/7548753?v=4" />
-    </a>
-</a>
+Sylvain Tauxe
+Kirell Benzi
+Pierre Guilbert
