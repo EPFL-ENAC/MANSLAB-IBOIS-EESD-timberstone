@@ -8,6 +8,45 @@ To include it here, Export the Patch as a ZIP file and select Export ALL assets 
 Copy `patch.js` in `/js`.
 Then copy the `/assets/` files to the current `/assets/` folder.
 
+- The current assets are loaded via the cdn at this cdn url
+  - s3 bucket cdn enac-it4r private at -> /Timberstone/V01/assets/
+  - https://enacit4r-cdn.epfl.ch/Timberstone/V01/assets/
+
+```
+/Timberstone/V01/assets/620ce31dcef9e411244c5e84_part_5_obj_1.glb
+/Timberstone/V01/assets/620ce31dcef9e411244c5e84_part_5_obj_3.glb
+/Timberstone/V01/assets/620ce31dcef9e411244c5e84_part_5_obj_4.glb
+/Timberstone/V01/assets/Casio-MT-600-Piano-1-C3.wav
+/Timberstone/V01/assets/GrndPnShrt_21_G_3_78_SP.wav
+/Timberstone/V01/assets/lib_hdr_gravelpath.rgbe.png
+/Timberstone/V01/assets/lib_matcaps_Chrome_Blue_Tint.png
+/Timberstone/V01/assets/part_4_obj_1.ply
+/Timberstone/V01/assets/part_4_obj_10.ply
+/Timberstone/V01/assets/part_4_obj_2.ply
+/Timberstone/V01/assets/part_4_obj_3.ply
+/Timberstone/V01/assets/part_4_obj_4.ply
+/Timberstone/V01/assets/part_4_obj_5.ply
+/Timberstone/V01/assets/part_4_obj_6.ply
+/Timberstone/V01/assets/part_4_obj_7.ply
+/Timberstone/V01/assets/part_4_obj_8.ply
+/Timberstone/V01/assets/part_4_obj_9.ply
+/Timberstone/V01/assets/part_5_obj_1.glb
+/Timberstone/V01/assets/part_5_obj_2.ply
+/Timberstone/V01/assets/part_5_obj_3.glb
+/Timberstone/V01/assets/part_5_obj_4.glb
+/Timberstone/V01/assets/stone1.ply
+/Timberstone/V01/assets/stone10.ply
+/Timberstone/V01/assets/stone11.ply
+/Timberstone/V01/assets/stone2.ply
+/Timberstone/V01/assets/stone3.ply
+/Timberstone/V01/assets/stone4.ply
+/Timberstone/V01/assets/stone5.ply
+/Timberstone/V01/assets/stone6.ply
+/Timberstone/V01/assets/stone7.ply
+/Timberstone/V01/assets/stone8.ply
+/Timberstone/V01/assets/stone9.ply
+```
+
 ## Point clouds preprocessing methods (draft)
 
 Tools : MeshLab, Blender (latest version).
