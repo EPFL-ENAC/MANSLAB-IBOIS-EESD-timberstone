@@ -34,7 +34,11 @@ find . -depth -type f -regex '.*\.\(m4v\)' \
      -exec bash -c 'ffmpeg -y -i "$1" -crf 35 -c:v libx264 -b:v 2500k -profile:v high -pix_fmt yuv420p -color_primaries 1 -color_trc 1 -colorspace 1 -movflags +faststart -an "${1%.m4v}.mp4"; rm "$1";' _ '{}' \;
 echo 'create thumbnails for every mp4'
 find . -depth -type f -regex '.*\.\(mp4\)' \
-     -exec bash -c 'ffmpeg -y -i "$1" -ss 10.0 -s 420x270 -frames:v 1  -filter:v "yadif" -an "${1%.mp4}.png";' _ '{}' \;
+     -exec bash -c 'ffmpeg -y -i "$1" -ss 10.0 -frames:v 1  -filter:v "yadif" -an "${1%.mp4}.png";' _ '{}' \;
+echo 'convert png to webp and remove png thumbnail'; \
+find . -depth -type f -regex '.*\.\(png\)' \
+     -exec bash -c 'magick convert "$1" -quality 15 "${1%.png}.webp"; rm "$1"' _ '{}' \;
+echo 'convert PNG to webp and remove PNG'; \
 echo 'upload to cdn via s3cmd'; \
 read -p 'enter version number: ' VERSION_NAME; \
 read -p 'enter bucket_name: ' BUCKET_NAME; \

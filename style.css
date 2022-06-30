@@ -10570,6 +10570,11 @@ body:not(.device-touch) .button.button-full strong {
   color: #444;
 }
 
+.timberstone ul {
+  margin-left: 0px;
+  padding-left: 20px;
+}
+
 /* Feature Box - Plain
 -----------------------------------------------------------------*/
 
@@ -13797,6 +13802,8 @@ blockquote.float-end {
   display: block;
   width: 100%;
   -webkit-transform-style: preserve-3d;
+  max-height: 260px;
+  object-fit: cover;
 }
 
 .slider-element .owl-carousel .owl-item img {
