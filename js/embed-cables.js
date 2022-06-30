@@ -167,8 +167,8 @@ function createAPI() {
       prefixAssetPath: "",
       glCanvasId: "glcanvas",
       glCanvasResizeToWindow: false,
-      onFinishedLoading: patchFinishedLoading,
       // "canvas":{"alpha":true,"premultipliedAlpha":true} // make canvas transparent
     });
+    patchFinishedLoading(CABLES.patch);
   });
 })(); // Automatically called
