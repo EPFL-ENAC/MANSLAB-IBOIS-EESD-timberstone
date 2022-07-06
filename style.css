@@ -18374,3 +18374,8 @@ label.checkbox {
   -webkit-animation-name: fadeOutUpSmall;
   animation-name: fadeOutUpSmall;
 }
+
+.section-button {
+  display: flex;
+  justify-content: center;
+}
